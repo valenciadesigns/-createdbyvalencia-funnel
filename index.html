@@ -101,6 +101,46 @@ button:disabled{opacity:.5;cursor:not-allowed}
 .success h2{font-size:34px}
 .success p{color:var(--muted);line-height:1.6;max-width:540px;margin:10px auto}
 .small{font-size:12px;color:var(--muted);text-align:center;margin-top:14px}
+
+.demo-showcase{
+  margin:22px 0 28px;
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:linear-gradient(180deg,#fff,#faf7f4);
+  box-shadow:0 14px 36px rgba(28,22,20,.06)
+}
+.demo-showcase-head{text-align:center;max-width:700px;margin:0 auto 20px}
+.demo-showcase-head .demo-kicker{
+  display:inline-block;font-size:11px;font-weight:900;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:7px
+}
+.demo-showcase-head h3{font-size:clamp(24px,4vw,34px);margin:0 0 8px;letter-spacing:-.03em}
+.demo-showcase-head p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+.demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.demo-card{
+  border:1px solid var(--line);background:#fff;border-radius:18px;padding:18px;
+  display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--text);
+  transition:.2s ease;min-height:178px
+}
+.demo-card:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(28,22,20,.08)}
+.demo-card-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.demo-icon{
+  width:46px;height:46px;border-radius:14px;display:grid;place-items:center;
+  font-size:23px;background:var(--soft)
+}
+.demo-arrow{font-size:22px;color:var(--accent);font-weight:900}
+.demo-card h4{font-size:19px;margin:0}
+.demo-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.55}
+.demo-card .demo-cta{
+  margin-top:auto;font-size:13px;font-weight:900;color:var(--accent)
+}
+@media(max-width:700px){
+  .demo-showcase{padding:18px}
+  .demo-grid{grid-template-columns:1fr}
+  .demo-card{min-height:auto}
+}
+
 .footer{
   padding:34px 0 30px;
   margin-top:28px;
@@ -296,6 +336,37 @@ button:disabled{opacity:.5;cursor:not-allowed}
         </div>
       </div>
     </section>
+
+    <section class="demo-showcase" aria-labelledby="sample-sites-title">
+      <div class="demo-showcase-head">
+        <span class="demo-kicker">See the possibilities</span>
+        <h3 id="sample-sites-title">Want to see what a one-page website can look like?</h3>
+        <p>Open either sample below to see two different industries and design styles built around the same goal: make the business easy to understand and easy to contact.</p>
+      </div>
+
+      <div class="demo-grid">
+        <a class="demo-card" href="haven_glow_demo_final.html" target="_blank" rel="noopener noreferrer">
+          <div class="demo-card-top">
+            <div class="demo-icon">✨</div>
+            <div class="demo-arrow">↗</div>
+          </div>
+          <h4>Beauty &amp; Personal Services</h4>
+          <p>Haven &amp; Glow Beauty Studio — services, gallery, booking contact points, and a polished boutique look.</p>
+          <span class="demo-cta">View Beauty Demo</span>
+        </a>
+
+        <a class="demo-card" href="everclean_demo_final.html" target="_blank" rel="noopener noreferrer">
+          <div class="demo-card-top">
+            <div class="demo-icon">🧼</div>
+            <div class="demo-arrow">↗</div>
+          </div>
+          <h4>Home &amp; Commercial Services</h4>
+          <p>EverClean — a clean, straightforward service website focused on services, company information, and quote requests.</p>
+          <span class="demo-cta">View Cleaning Demo</span>
+        </a>
+      </div>
+    </section>
+
 
     <div class="card">
       <div class="progress">
